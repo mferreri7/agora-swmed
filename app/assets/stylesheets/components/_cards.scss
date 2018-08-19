@@ -16,7 +16,7 @@
   margin: 8px;
   border-radius: 3px;
   box-shadow: 1px 1px 0.2em rgba(0,0,0,0.2);
-  min-height: 360px;
+  min-height: 400px;
   background-color: white;
 }
 
@@ -66,6 +66,21 @@
     font-weight: normal;
   }
   .card-field-descripton{
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .card-field-name{
+      // min-height: 50%;
+
+      width: 100%;
+
+    }
+    .card-with-margin {
+            width: 100%;
+
+    }
     p {
       margin: 0px;
     }
@@ -182,8 +197,8 @@
 
 .bottom {
   width: 80%;
-  position: absolute;
-  bottom: 16px;
+  // position: absolute;
+  // bottom: 16px;
 }
 
 .flex {
