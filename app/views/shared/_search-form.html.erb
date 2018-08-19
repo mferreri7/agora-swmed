@@ -1,9 +1,9 @@
 <div class="row">
     <%= form_with url: notes_path, method: :get, class: "field-search-form", local: true do |f| %>
     <div class="col-xs-12 col-sm-9 search-form-input">
-      <%= f.text_field :dates,
-        value: params[:dates],
-        id: "dates",
+      <%= f.text_field :query,
+        value: params[:query],
+        id: "query",
         class: "datepicker datesize",
         placeholder: "Busca por tu universidad, carrera, curso o semestre"
       %>
