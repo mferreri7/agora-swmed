@@ -1,7 +1,7 @@
 <div class="card">
   <div
     class="card-top">
-    <%= image_tag "meta-pic.jpeg", alt: "alttext", class: "avatar" %>
+    <%= universiity_picture(field) %>
   </div>
   <div class="card-bottom">
     <div class="card-header">
@@ -12,7 +12,7 @@
       <div class="card-field-descripton">
         <p class="card-field-name">
           <i class="fas fa-pencil-alt"></i>
-          <% size = 60 %>
+          <% size = 110 %>
           <% if field.subject.size > size %>
             <%= field.subject[0..size] %>...
           <% else %>
