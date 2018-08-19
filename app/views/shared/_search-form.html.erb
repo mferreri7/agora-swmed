@@ -1,16 +1,16 @@
 <div class="row">
     <%= form_with url: notes_path, method: :get, class: "field-search-form", local: true do |f| %>
-    <div class="col-xs-12 col-sm-10 search-form-input">
+    <div class="col-xs-12 col-sm-9 search-form-input">
       <%= f.text_field :dates,
         value: params[:dates],
         id: "dates",
         class: "datepicker datesize",
-        placeholder: "¿Cuándo quieres jugar?"
+        placeholder: "Busca por tu universidad, carrera, curso o semestre"
       %>
     </div>
 
-    <div class="col-xs-12 col-sm-2 search-form-input">
-      <%= f.submit "BUSCAR", name: nil, class: "btn btn-primary full-width-padded" %>
+    <div class="col-xs-12 col-sm-3 search-form-input">
+      <%= f.submit "Buscar", name: nil, class: "btn btn-primary full-width-padded" %>
     </div>
   <% end %>
 </div>
