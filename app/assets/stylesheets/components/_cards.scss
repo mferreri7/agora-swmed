@@ -16,7 +16,7 @@
   margin: 8px;
   border-radius: 3px;
   box-shadow: 1px 1px 0.2em rgba(0,0,0,0.2);
-  min-height: 280px;
+  min-height: 360px;
   background-color: white;
 }
 
@@ -25,7 +25,7 @@
   font-size: 16px;
   font-weight: normal;
   color: rgba(0,0,0,0.7);
-  padding: 12px 18px;
+  padding: 18px 18px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   .card-bottom-footer{
@@ -41,6 +41,8 @@
 }
 
 .card-header{
+  margin-bottom: 16px;
+  min-height: 80px;
   h3, p {
     margin: 0px;
   }
@@ -187,6 +189,7 @@
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .justify-content {
@@ -198,6 +201,13 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.3), 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 22px;
 }
