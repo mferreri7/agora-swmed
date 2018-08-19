@@ -1,0 +1,52 @@
+.center-div {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.field-search-form {
+  width: 100%;
+
+}
+
+.datesize {
+  -webkit-appearance: none;
+  border: 1px solid #ccc;
+  background-color: white !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+  font-weight: bold;
+  margin-top: 8px;
+  width: 100%;
+  text-align: center;
+  height: 39px;
+  background-color: white;
+  color: $my-gray;
+  border-radius: 6px;
+  font-size: 18px;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.4) !important;
+  }
+
+}
+
+.full-width-padded {
+  width: 100%;
+  margin-top: 8px;
+}
+
+
+.form-control {
+  border-radius: 3px;
+  color: $my-gray;
+  background-color: white;
+  outline: none;
+}
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: #aaa;
+  margin-right: 0.5em;
+}
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}
