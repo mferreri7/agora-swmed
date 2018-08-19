@@ -1,0 +1,35 @@
+<div class="card">
+  <div
+    class="card-top">
+    <%= image_tag "meta-pic.jpeg", alt: "alttext", class: "avatar" %>
+  </div>
+  <div class="card-bottom">
+    <div class="card-header">
+      <h3 class="card-business-name"><%= field.university%></h3>
+      <p class="card-addreess"> Materia: <%= field.degree %></p>
+    </div>
+    <div class="card-field-info">
+      <div class="card-field-descripton">
+        <p class="card-field-name">
+          <i class="fas fa-pencil-alt"></i>
+          <% size = 60 %>
+          <% if field.subject.size > size %>
+            <%= field.subject[0..size] %>...
+          <% else %>
+            <%= field.subject[0..size] %>
+          <% end %>
+        </p>
+      </div>
+      </div>
+      <div class="flex bottom justify-content">
+        <div class="card-field-capacity">
+          <p>Semestre: <%= field.semester %> </p>
+        </div>
+        <p class="card-price">
+          <i class="fas fa-dollar-sign"></i>
+          Precio: 1.000
+        </p>
+    </div>
+  </div>
+</div>
+
