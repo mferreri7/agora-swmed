@@ -1,0 +1,12 @@
+<%= render 'shared/navbar' %>
+<div class="banner <%= "banner-landing" if controller_name == "pages" %>">
+  <div class="banner-content">
+    <div class="moto">
+      <h1> Haz el gol y déjanos hacer el resto </h1>
+      <h5> Reserva tu cancha sintética en Medellín </h5>
+    </div>
+    <div class="container center-div">
+      <%= render "shared/search-form" %>
+    </div>
+  </div>
+</div>
