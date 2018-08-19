@@ -1,37 +1,19 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="main-container">
+    <div class="cards-container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 id="titulo" style="text-align: center; margin: 8px; padding: 16px; font-weight: bold; font-size: 32px;">Apuntes Disponibles</h1>
+        </div>
+      </div>
+      <div class="row" id="field-cards-row">
+        <% @notes.each do |field| %>
+          <div class="col-xs-12 col-sm-4">
+            <%= render 'shared/note_card', field: field %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
 
-<h1>Notes</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>University</th>
-      <th>Degree</th>
-      <th>Subject</th>
-      <th>Semester</th>
-      <th>Description</th>
-      <th>Attachment</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @notes.each do |note| %>
-      <tr>
-        <td><%= note.university %></td>
-        <td><%= note.degree %></td>
-        <td><%= note.subject %></td>
-        <td><%= note.semester %></td>
-        <td><%= note.description %></td>
-        <td><%= note.attachment %></td>
-        <td><%= link_to 'Show', note %></td>
-        <td><%= link_to 'Edit', edit_note_path(note) %></td>
-        <td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Note', new_note_path %>
